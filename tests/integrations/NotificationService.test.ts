@@ -126,7 +126,6 @@ describe("store", () => {
     const resp = await notificationService.storeNotification(
       authGuard,
       file,
-      1004,
       1003,
       "camera",
       "fire",
@@ -152,7 +151,6 @@ describe("store", () => {
     const resp = await notificationService.storeNotification(
       authGuard,
       file,
-      1004,
       1003,
       "camera",
       "fire",
@@ -179,7 +177,6 @@ describe("store", () => {
     const res = await notificationService.storeNotification(
       authGuard,
       file,
-      1004,
       1003,
       "camera",
       "fire",

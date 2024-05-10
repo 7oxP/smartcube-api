@@ -16,7 +16,6 @@ const storeNotification = async function (
     cloudMessageService: ICloudMessagingService,
     cloudStorageService: IStorageService,
     file: IUploadedFile | null,
-    edgeServerId: number,
     deviceId: number,
     deviceType: string,
     objectLabel: string,
@@ -91,7 +90,7 @@ const storeNotification = async function (
         description,
         uploadResponse == null ? "" : uploadResponse.getData().fileUrl,
         storeResponse.getData().id,
-        edgeServerId,
+        authGuard.getEdgeServerId(),
         deviceId,
         deviceType
     )
